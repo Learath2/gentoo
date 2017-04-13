@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>learath2@gmail.com</email>
+		<name>Emir Marincic</name>
+	</maintainer>
+	<maintainer type="project">
+		<email>proxy-maint@gentoo.org</email>
+		<name>Proxy Maintainers</name>
+	</maintainer>
+	<longdescription lang="en">
+		DDraceNetwork (DDNet) is an actively maintained version of DDRace, a
+		Teeworlds modification with a unique cooperative gameplay. Help each
+		other play through custom maps with up to 64 players, compete against
+		the best in international tournaments, design your own maps, or run your
+		own server.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">ddnet/ddnet</remote-id>
+	</upstream>
+</pkgmetadata>

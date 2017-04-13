@@ -1,0 +1,25 @@
+From 253857e236200593d95e3e51d29db6dbcb757ba7 Mon Sep 17 00:00:00 2001
+From: heinrich5991 <heinrich5991@gmail.com>
+Date: Sat, 11 Mar 2017 13:25:52 +0100
+Subject: [PATCH] CMakeLists.txt: Create the generated source directory
+
+Problem was reported on IRC, in #teeworlds on Quakenet.
+---
+ CMakeLists.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 24fdf13..32a7eef 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -206,6 +206,7 @@ function(generate_source output_file script_parameter)
+   )
+ endfunction(generate_source)
+ 
++file(MAKE_DIRECTORY "${PROJECT_SOURCE_DIR}/src/game/generated/")
+ chash("src/game/generated/nethash.cpp"
+   "src/engine/shared/protocol.h"
+   "src/game/generated/protocol.h"
+-- 
+2.10.2
+
